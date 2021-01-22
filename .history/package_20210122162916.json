@@ -1,0 +1,21 @@
+{
+  "name": "@sarahg4000/jeux-reponse",
+  "version": "1.0.0",
+  "description": "jeux de question reponse en React",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint --fix --cache src",
+    "build": "npx parcel build src/index.html",
+    "work": "npx parcel src/index.html --log-level 4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahG4000/jeux-question.git"
+  },
+  "author": "SarahG4000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahG4000/jeux-question/issues"
+  },
+  "homepage": "https://github.com/SarahG4000/jeux-question#readme"
+}
