@@ -1,0 +1,41 @@
+{
+  "name": "@sarahg4000/jeux-reponse",
+  "version": "1.0.0",
+  "description": "jeux de question reponse en React",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint --fix --cache src",
+    "build": "npx parcel build src/index.html",
+    "work": "npx parcel src/index.html --log-level 4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahG4000/jeux-question.git"
+  },
+  "author": "SarahG4000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahG4000/jeux-question/issues"
+  },
+  "homepage": "https://github.com/SarahG4000/jeux-question#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@becode/eslint-config": "^0.9.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-unicorn": "^20.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.4",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "bulma": "^0.8.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
