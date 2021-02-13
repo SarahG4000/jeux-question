@@ -11,4 +11,4 @@ import ReactDOM from "react-dom";
 
 import "bulma";
 
-ReactDOM.render(<Pomodoro />, document.querySelector("#app"));
+ReactDOM.render(<GameAsk />, document.querySelector("#app"));
