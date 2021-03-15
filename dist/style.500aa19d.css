@@ -1,0 +1,16 @@
+body {
+  color: #FEEFEF;
+}
+
+#app {
+  border: solid 1px #393939;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.sg-word {
+  color: #393939;
+}
+
+/*# sourceMappingURL=/style.500aa19d.css.map */

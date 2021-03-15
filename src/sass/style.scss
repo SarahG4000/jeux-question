@@ -1,0 +1,19 @@
+$colorblanc : #FEEFEF;
+$colorNoir : #393939;
+
+body {
+    color: $colorblanc;
+}
+
+#app {
+    border: solid 1px $colorNoir;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+
+}
+
+.sg-word {
+
+    color: #393939;
+}

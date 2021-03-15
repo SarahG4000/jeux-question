@@ -8,7 +8,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-
+import GameAsk from "./component/gameask";
 import "bulma";
 
-ReactDOM.render(<GameAsk/>, document.querySelector("#app"));
+ReactDOM.render(<GameAsk />, document.querySelector("#app"));
