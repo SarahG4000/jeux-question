@@ -1,16 +1,33 @@
+@charset "UTF-8";
 body {
   color: #FEEFEF;
 }
 
 #app {
+  margin-top: 50vh;
+  /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
+
+.container {
   border: solid 1px #393939;
-  height: 150px;
-  width: 150px;
+  height: 550px;
+  width: auto;
   margin: auto;
+  padding: 15px;
+}
+
+.sg-border {
+  width: auto;
+  padding: 15px;
+  border: 1px solid #393939;
 }
 
 .sg-word {
+  text-align: center;
+  padding: 15px;
   color: #393939;
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=/style.500aa19d.css.map */

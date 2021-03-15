@@ -28298,13 +28298,20 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var GameAsk = function GameAsk() {
+  function FuncTristan(e) {
+    e.preventDefault();
+    console.log("lien a été cliquer !");
+  }
+
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: ""
+    className: "sg-border"
   }, /*#__PURE__*/_react.default.createElement("p", {
     className: "sg-word"
-  }, "Welcom to ask game")));
+  }, "Welcom to ask game")), /*#__PURE__*/_react.default.createElement("button", {
+    onClick: FuncTristan
+  }, "Enter"));
 };
 
 var _default = GameAsk;
@@ -28431,7 +28438,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45551" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35033" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

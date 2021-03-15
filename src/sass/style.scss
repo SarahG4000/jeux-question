@@ -6,14 +6,29 @@ body {
 }
 
 #app {
+    margin-top: 50vh;
+    /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%);
+}
+
+.container {
     border: solid 1px $colorNoir;
-    height: 150px;
-    width: 150px;
+    height: 550px;
+    width: auto;
     margin: auto;
+    padding: 15px;
 
 }
 
-.sg-word {
+.sg-border {
+    width: auto;
+    padding: 15px;
+    border: 1px solid $colorNoir;
+}
 
+.sg-word {
+    text-align: center;
+    padding: 15px;
     color: #393939;
+    font-size: 35px;
 }
