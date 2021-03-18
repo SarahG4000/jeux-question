@@ -2,7 +2,7 @@
   "name": "@sarahg4000/jeux-reponse",
   "version": "1.0.0",
   "description": "jeux de question reponse en React",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "lint": "npx eslint --fix --cache src",
     "build": "npx parcel build src/index.html",

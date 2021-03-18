@@ -1,10 +1,11 @@
 import React from "react";
+import QuestOne from "./questone";
 
 const GameAsk =()=>{
 
     function FuncTristan(e){
         e.preventDefault();
-        console.log("lien a été cliquer !")
+        QuestOne();
     }
 
     return(
