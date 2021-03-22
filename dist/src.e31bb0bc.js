@@ -28329,9 +28329,9 @@ var _questone = _interopRequireDefault(require("./questone"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var GameAsk = function GameAsk() {
-  function FuncTristan(e) {
-    e.preventDefault();
-    (0, _questone.default)();
+  function FuncTristan() {
+    // QuestOne();
+    console.log("Knock Knock !!??");
   }
 
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -28340,7 +28340,7 @@ var GameAsk = function GameAsk() {
     className: "sg-border"
   }, /*#__PURE__*/_react.default.createElement("p", {
     className: "sg-word"
-  }, "Welcom to ask game")), /*#__PURE__*/_react.default.createElement("button", {
+  }, "Welcom to ask game")), /*#__PURE__*/_react.default.createElement(_questone.default, null), /*#__PURE__*/_react.default.createElement("button", {
     onClick: FuncTristan
   }, "Enter"));
 };

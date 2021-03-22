@@ -3,10 +3,17 @@ import QuestOne from "./questone";
 
 const GameAsk =()=>{
 
-    function FuncTristan(e){
-        e.preventDefault();
-        QuestOne();
-    }
+    // function FuncTristan(){
+    //     // QuestOne();
+    //     console.log("Knock Knock !!??")
+               
+    // }
+
+    document.querySelector("#questone")
+            .addEventListener("click",function(){
+        document.querySelector().hidden = true;
+        document.querySelector().hidden = false;
+            }, false);
 
     return(
         <div className={"container"}>
@@ -18,8 +25,12 @@ const GameAsk =()=>{
                 
 
             </div>
+            
+            <QuestOne className={"sg-hidden"} />
 
-            <button onClick={FuncTristan}>Enter</button>
+            <button id="questone" onClick={FuncTristan}>Enter</button>
+
+            
 
         </div>
     )
