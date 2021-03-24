@@ -10,22 +10,13 @@ const QuestOne =()=>{
     
 
     return(
-        <div className={"container"}>
+        <div className={"lol"}>
 
-        <div className={"sg-border"}>
+        <h1>Comment s'appelle le célébre pont rouge de San fransico ??</h1>
 
-            <p className={"sg-word"}>Welcom quest one</p>
-
-            
-
+            <button>Next Quest</button>
+        
         </div>
-
-            <button>
-                yes !
-            </button>
-        {/* <button onClick={NextQuest()}>Enter</button> */}
-
-    </div>
     )
 }
 

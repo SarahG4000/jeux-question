@@ -28304,12 +28304,8 @@ var QuestOne = function QuestOne() {
   //     function QuestTwo();
   // }
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "sg-border"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "sg-word"
-  }, "Welcom quest one")), /*#__PURE__*/_react.default.createElement("button", null, "yes !"));
+    className: "lol"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Comment s'appelle le c\xE9l\xE9bre pont rouge de San fransico ??"), /*#__PURE__*/_react.default.createElement("button", null, "Next Quest"));
 };
 
 var _default = QuestOne;
@@ -28330,19 +28326,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var GameAsk = function GameAsk() {
   function FuncTristan() {
-    // QuestOne();
-    console.log("Knock Knock !!??");
+    console.log("Knock Knock");
+    document.getElementById("sg-hidden").style.display = "block";
+    document.getElementById("sg-border").style.display = "none";
   }
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "sg-border",
     className: "sg-border"
-  }, /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "sg-word"
-  }, "Welcom to ask game")), /*#__PURE__*/_react.default.createElement(_questone.default, null), /*#__PURE__*/_react.default.createElement("button", {
+  }, "Welcom to ask game"), /*#__PURE__*/_react.default.createElement("button", {
+    id: "questone",
     onClick: FuncTristan
-  }, "Enter"));
+  }, "Enter")), /*#__PURE__*/_react.default.createElement("div", {
+    id: "sg-hidden"
+  }, /*#__PURE__*/_react.default.createElement(_questone.default, null)));
 };
 
 var _default = GameAsk;
@@ -28469,7 +28470,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44201" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40841" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

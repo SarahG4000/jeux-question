@@ -30,4 +30,13 @@ body {
   font-size: 35px;
 }
 
+#sg-hidden {
+  display: none;
+}
+
+html {
+  background: url("/decorated-3561710_1920.1d0eecca.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+
 /*# sourceMappingURL=/style.500aa19d.css.map */

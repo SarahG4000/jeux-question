@@ -1,34 +1,37 @@
 import React from "react";
 import QuestOne from "./questone";
 
+
+
 const GameAsk =()=>{
+  
+    
+   function FuncTristan(){
+       console.log("Knock Knock")
+       document.getElementById("sg-hidden").style.display = "block";
+       document.getElementById("sg-border").style.display = "none";
+   }
 
-    // function FuncTristan(){
-    //     // QuestOne();
-    //     console.log("Knock Knock !!??")
-               
-    // }
-
-    document.querySelector("#questone")
-            .addEventListener("click",function(){
-        document.querySelector().hidden = true;
-        document.querySelector().hidden = false;
-            }, false);
-
+  
+  
     return(
         <div className={"container"}>
 
-            <div className={"sg-border"}>
+            <div id={"sg-border"} className={"sg-border"}>
 
-                <p className={"sg-word"}>Welcom to ask game</p>
+                <h1 className={"sg-word"}>Welcom to ask game</h1>
 
                 
-
+                <button id={"questone"} onClick={FuncTristan}>Enter</button>
             </div>
             
-            <QuestOne className={"sg-hidden"} />
+            <div id={"sg-hidden"}>
+            <QuestOne />
 
-            <button id="questone" onClick={FuncTristan}>Enter</button>
+            </div>
+           
+
+           
 
             
 
