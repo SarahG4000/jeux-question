@@ -28304,8 +28304,10 @@ var QuestOne = function QuestOne() {
   //     function QuestTwo();
   // }
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "lol"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Comment s'appelle le c\xE9l\xE9bre pont rouge de San fransico ??"), /*#__PURE__*/_react.default.createElement("button", null, "Next Quest"));
+    className: "container2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "sg-border"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Comment s'appelle le c\xE9l\xE9bre pont rouge de San fransico ??"), /*#__PURE__*/_react.default.createElement("button", null, "Next Quest")));
 };
 
 var _default = QuestOne;
@@ -28332,16 +28334,19 @@ var GameAsk = function GameAsk() {
   }
 
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
+    className: "container1"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "gridsg"
   }, /*#__PURE__*/_react.default.createElement("div", {
     id: "sg-border",
     className: "sg-border"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "sg-word"
   }, "Welcom to ask game"), /*#__PURE__*/_react.default.createElement("button", {
+    className: "button",
     id: "questone",
     onClick: FuncTristan
-  }, "Enter")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Enter"))), /*#__PURE__*/_react.default.createElement("div", {
     id: "sg-hidden"
   }, /*#__PURE__*/_react.default.createElement(_questone.default, null)));
 };
@@ -28470,7 +28475,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40841" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35253" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

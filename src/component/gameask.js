@@ -15,15 +15,19 @@ const GameAsk =()=>{
   
   
     return(
-        <div className={"container"}>
+        <div className={"container1"}>
 
-            <div id={"sg-border"} className={"sg-border"}>
+            <div className={"gridsg"}>
 
-                <h1 className={"sg-word"}>Welcom to ask game</h1>
+                <div id={"sg-border"} className={"sg-border"}>
 
-                
-                <button id={"questone"} onClick={FuncTristan}>Enter</button>
-            </div>
+                    <h1 className={"sg-word"}>Welcom to ask game</h1>
+
+                    
+                    <button className={"button"} id={"questone"} onClick={FuncTristan}>Enter</button>
+                </div>
+            </div> 
+           
             
             <div id={"sg-hidden"}>
             <QuestOne />

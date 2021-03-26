@@ -10,12 +10,14 @@ const QuestOne =()=>{
     
 
     return(
-        <div className={"lol"}>
+        <div className={"container2"}>
+            <div className={"sg-border"}>
 
-        <h1>Comment s'appelle le célébre pont rouge de San fransico ??</h1>
+            <h1>Comment s'appelle le célébre pont rouge de San fransico ??</h1>
 
-            <button>Next Quest</button>
-        
+                <button>Next Quest</button>
+            
+            </div>
         </div>
     )
 }
