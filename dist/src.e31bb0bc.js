@@ -35264,7 +35264,34 @@ var FastFieldInner = /*#__PURE__*/function (_React$Component) {
 
 var FastField = /*#__PURE__*/connect(FastFieldInner);
 exports.FastField = FastField;
-},{"react":"../node_modules/react/index.js","react-fast-compare":"../node_modules/react-fast-compare/index.js","deepmerge":"../node_modules/deepmerge/dist/es.js","lodash-es/isPlainObject":"../node_modules/lodash-es/isPlainObject.js","lodash-es/clone":"../node_modules/lodash-es/clone.js","lodash-es/toPath":"../node_modules/lodash-es/toPath.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","hoist-non-react-statics":"../node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","lodash-es/cloneDeep":"../node_modules/lodash-es/cloneDeep.js"}],"component/questone.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-fast-compare":"../node_modules/react-fast-compare/index.js","deepmerge":"../node_modules/deepmerge/dist/es.js","lodash-es/isPlainObject":"../node_modules/lodash-es/isPlainObject.js","lodash-es/clone":"../node_modules/lodash-es/clone.js","lodash-es/toPath":"../node_modules/lodash-es/toPath.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","hoist-non-react-statics":"../node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","lodash-es/cloneDeep":"../node_modules/lodash-es/cloneDeep.js"}],"component/questtwo.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function QuestTwo() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "container3"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "gridsg"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "sg-border",
+    className: "sg-border"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "sg-word"
+  }, "Comment s'appelle le c\xE9l\xE9bre pont rouge de San fransico ??"))));
+}
+
+var _default = QuestTwo;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"component/questone.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35276,9 +35303,10 @@ var _react = _interopRequireDefault(require("react"));
 
 var _formik = require("formik");
 
+var _questtwo = _interopRequireDefault(require("./questtwo"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import QuestTwo from "../component/questtwo";
 var QuestOne = function QuestOne() {
   // function NextQuest(e){
   //     e.preventDefault();
@@ -35289,19 +35317,33 @@ var QuestOne = function QuestOne() {
       reponse: ''
     },
     onSubmit: function onSubmit(values) {
-      alert(JSON.stringify(values, null, 2));
+      console.log(values); //   alert(JSON.stringify(values, null, 2));
     }
   });
+  var good = "golden gate";
+
+  function NextQuest() {
+    if (formik.values == good) {
+      console.log("Knock Knock");
+      document.getElementById("sg-hidden2").style.display = "block";
+      document.getElementById("sg-border2").style.display = "none";
+    } else {
+      console.log("faux!!");
+    }
+  }
+
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container2"
+    className: "container2",
+    id: "sg-hidden"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "gridsg"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    id: "sg-border",
+    id: "sg-border2",
     className: "sg-border"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "sg-word"
   }, "Comment s'appelle le c\xE9l\xE9bre pont rouge de San fransico ??"), /*#__PURE__*/_react.default.createElement("form", {
+    onSubmit: formik.handleSubmit,
     className: "sg-sub"
   }, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
@@ -35313,13 +35355,16 @@ var QuestOne = function QuestOne() {
     className: "button",
     id: "sg-position",
     type: "submit",
-    value: "Envoyer"
-  }, "Valider")))));
+    value: "Envoyer",
+    onClick: NextQuest
+  }, "Valider")))), /*#__PURE__*/_react.default.createElement("div", {
+    id: "sg-hidden2"
+  }, /*#__PURE__*/_react.default.createElement(_questtwo.default, null)));
 };
 
 var _default = QuestOne;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","formik":"../node_modules/formik/dist/formik.esm.js"}],"component/gameask.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","formik":"../node_modules/formik/dist/formik.esm.js","./questtwo":"component/questtwo.js"}],"component/gameask.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35343,9 +35388,9 @@ var GameAsk = function GameAsk() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "container1"
   }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "sg-border",
     className: "gridsg"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    id: "sg-border",
     className: "sg-border"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "sg-word"
@@ -35355,9 +35400,7 @@ var GameAsk = function GameAsk() {
     className: "button",
     id: "questone",
     onClick: FuncTristan
-  }, "Enter"))), /*#__PURE__*/_react.default.createElement("div", {
-    id: "sg-hidden"
-  }, /*#__PURE__*/_react.default.createElement(_questone.default, null)));
+  }, "Enter"))), /*#__PURE__*/_react.default.createElement(_questone.default, null));
 };
 
 var _default = GameAsk;

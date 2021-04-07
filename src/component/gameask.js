@@ -7,7 +7,7 @@ const GameAsk =()=>{
   
     
    function FuncTristan(){
-       console.log("Knock Knock")
+       console.log("Knock Knock");
        document.getElementById("sg-hidden").style.display = "block";
        document.getElementById("sg-border").style.display = "none";
    }
@@ -17,9 +17,9 @@ const GameAsk =()=>{
     return(
         <div className={"container1"}>
 
-            <div className={"gridsg"}>
+            <div id={"sg-border"} className={"gridsg"}>
 
-                <div id={"sg-border"} className={"sg-border"}>
+                <div className={"sg-border"}>
 
                     <h1 className={"sg-word"}>Prêt a commencer le quiz ?</h1>
 
@@ -29,19 +29,13 @@ const GameAsk =()=>{
                     <button className={"button"} id={"questone"} onClick={FuncTristan}>Enter</button>
                 </div>
             </div> 
-           
-            
-            <div id={"sg-hidden"}>
-            <QuestOne />
+             {/* <div > */}
+                <QuestOne />
 
-            </div>
-           
-
-           
-
-            
-
+            {/* </div> */}
         </div>
+
+        
     )
 }
 

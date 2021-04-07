@@ -1,3 +1,5 @@
+import React from "react";
+
 function QuestTwo(){
     
 
@@ -9,10 +11,12 @@ function QuestTwo(){
 
             <h1 className={"sg-word"}>Comment s'appelle le célébre pont rouge de San fransico ??</h1>
 
-                <button className={"button"} id={"questone"} onClick={}>Next Quest</button>
+                {/* <button className={"button"} id={"questone"} onClick={}>Next Quest</button> */}
             
             </div>
         </div>
     </div>
     )
 }
+
+export default QuestTwo;

@@ -21,13 +21,9 @@ body {
 .container1 {
   background: url("/background-3317139_1920.3d493320.jpg") no-repeat center center fixed;
   background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
 }
 
 .container2 {
-  width: auto;
-  margin: auto;
   padding: 15px;
   background: url("/background-3878251_1920.7a8fbab6.jpg") no-repeat center center fixed;
   background-size: 100% 100%;
@@ -62,6 +58,11 @@ body {
   grid-area: 2/1/3/2;
 }
 
+.sg-border2 {
+  padding: 15px;
+  grid-area: 2/1/3/2;
+}
+
 .sg-word {
   text-align: center;
   padding: 15px;
@@ -82,6 +83,10 @@ body {
 }
 
 #sg-hidden {
+  display: none;
+}
+
+#sg-hidden2 {
   display: none;
 }
 
