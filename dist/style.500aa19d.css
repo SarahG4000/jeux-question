@@ -29,7 +29,7 @@ body {
   width: auto;
   margin: auto;
   padding: 15px;
-  background: url("/background-3317139_1920.3d493320.jpg") no-repeat center center fixed;
+  background: url("/background-3878251_1920.7a8fbab6.jpg") no-repeat center center fixed;
   background-size: 100% 100%;
 }
 
@@ -37,7 +37,7 @@ body {
   width: auto;
   margin: auto;
   padding: 15px;
-  background: url("/background-3317139_1920.3d493320.jpg") no-repeat center center fixed;
+  background: url("/bokeh-2072271_1920.2e53feba.jpg") no-repeat center center fixed;
   background-size: 100% 100%;
 }
 
@@ -45,7 +45,7 @@ body {
   width: auto;
   margin: auto;
   padding: 15px;
-  background: url("/background-3317139_1920.3d493320.jpg") no-repeat center center fixed;
+  background: url("/decorated-3561710_1920.1d0eecca.jpg") no-repeat center center fixed;
   background-size: 100% 100%;
 }
 
@@ -67,6 +67,18 @@ body {
   padding: 15px;
   color: #393939;
   font-size: 35px;
+}
+
+.sg-sub {
+  text-align: center;
+  padding: 15px;
+  color: #393939;
+  font-size: 25px;
+}
+
+#sg-position {
+  display: block;
+  margin-left: 46%;
 }
 
 #sg-hidden {

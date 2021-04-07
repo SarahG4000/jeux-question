@@ -21,7 +21,9 @@ const GameAsk =()=>{
 
                 <div id={"sg-border"} className={"sg-border"}>
 
-                    <h1 className={"sg-word"}>Welcom to ask game</h1>
+                    <h1 className={"sg-word"}>Prêt a commencer le quiz ?</h1>
+
+                    <h5 className={"sg-sub"}>5 question 2 point par question</h5>
 
                     
                     <button className={"button"} id={"questone"} onClick={FuncTristan}>Enter</button>
